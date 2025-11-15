@@ -1,9 +1,9 @@
 :root {
     --primaryText: #fff;
-    --secondaryText: #ff015e;
-    --primary: rgba(156, 39, 176, .60);
-    --secondary: rgba(255, 1, 94, .60); 
-    --buttonHover: rgba(156, 39, 176, .40);
+    --secondaryText: #eab17f;
+    --primary: rgba(139, 118, 112, 0.8);
+    --secondary: rgba(255, 1, 94, .60);
+    --buttonHover: rgba(81, 67, 63, 0.8);
     --smallButtonHover: rgba(0, 0, 0, .25);
 }
 
@@ -26,7 +26,8 @@ body {
     min-height: 100%;
     /* The image used for the site background. Try changing skyscape.jpg to stars.jpg. Put a replacement photo in the images folder and, in line 21 below, replace skyscape.jpg with yourbackgroundfilename.jpg */
     /* The linear gradient darkens the image, like putting a sunglasses lens on top of it. If you want to darken the image even more, change 0.1 (both times) to 0.3 or higher */
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/skyscape.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/bridge.jpg);
+    /* I took this image of a bridge in Pandapas pond */
     /* Prevents the browser from repeating or "tiling" the background image */
     background-repeat: no-repeat;
     background-position: center;
@@ -64,7 +65,7 @@ img {
 
 .container {
     text-align: center;
-    width: 100%;    
+    width: 100%;
     padding: 0;
     margin-right: auto;
     margin-left: auto;
@@ -108,7 +109,8 @@ img {
     text-align: center;
 }
 
-.button, .external-link {
+.button,
+.external-link {
     border: 1px solid var(--primaryText);
     border-radius: 20px;
     box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
@@ -125,19 +127,22 @@ img {
 }
 
 @media (hover: hover) {
-    .button:hover { background-color: var(--buttonHover); }
+    .button:hover {
+        background-color: var(--buttonHover);
+    }
 }
 
 .button.highlight {
     background-color: var(--secondary);
 }
 
-.button:active, .external-link:active { 
-    transform: scale(0.98); 
-    /* Scaling button to 0.98 to its original size */ 
-    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24); 
-    /* Lowering the shadow */ 
-} 
+.button:active,
+.external-link:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
 
 .intro {
     margin: 0 auto;
@@ -183,21 +188,21 @@ img {
     padding: 0 .6em;
 }
 
-.description > p {
+.description>p {
     margin: .5em 0;
 }
 
 .footer {
-  font-size: .66em;
-  background-color: rgba(0, 0, 0, .5);
-  color: rgba(225, 225, 225, .8);
-  text-decoration: none;
-  width: 100%;
-  min-height: 3em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+    font-size: .66em;
+    background-color: rgba(0, 0, 0, .5);
+    color: rgba(225, 225, 225, .8);
+    text-decoration: none;
+    width: 100%;
+    min-height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .footer a {
@@ -209,7 +214,7 @@ img {
     .container {
         max-width: 540px;
     }
-    
+
     .button,
     .intro,
     .slidedown {
@@ -222,7 +227,7 @@ img {
     .container {
         max-width: 768px;
     }
-    
+
     .button,
     .intro,
     .slidedown {
