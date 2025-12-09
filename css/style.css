@@ -1,7 +1,7 @@
 :root {
     --primaryText: #fff;
     --secondaryText: #eab17f;
-    --primary: rgba(139, 118, 112, 0.8);
+    --primary: rgba(101, 82, 77, 0.9);
     --secondary: rgba(52, 44, 42, 0.9);
     --buttonHover: rgba(81, 67, 63, 0.8);
     --smallButtonHover: rgba(0, 0, 0, .25);
@@ -26,7 +26,7 @@ body {
     min-height: 100%;
     /* The image used for the site background. Try changing skyscape.jpg to stars.jpg. Put a replacement photo in the images folder and, in line 21 below, replace skyscape.jpg with yourbackgroundfilename.jpg */
     /* The linear gradient darkens the image, like putting a sunglasses lens on top of it. If you want to darken the image even more, change 0.1 (both times) to 0.3 or higher */
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../images/bridge.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../images/bridge.jpg);
     /* I took this image of a bridge in Pandapas pond */
     /* Prevents the browser from repeating or "tiling" the background image */
     background-repeat: no-repeat;
@@ -233,4 +233,26 @@ img {
     .slidedown {
         width: 40%;
     }
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 177.78%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+
+    margin-bottom: 20px;
+    /*padding under the video*/
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
 }
